@@ -1,0 +1,783 @@
+html,body{margin:0px;}
+
+.move{
+    opacity: 0;
+    transition: 1s ease;
+    transform:translateY(25%);
+    animation: all;
+}
+.pan_text.move.inview {
+    margin: 0px 30px;
+}
+.move.inview{
+    opacity: 1;
+    transition: 1s ease;
+    transform:translateY(0);
+    animation: all;
+  
+    /* visibility:hidden; */
+}
+.container{ 
+    display: block;
+}
+.work_design.move1{
+    display: inline-block;
+}
+.work_design.move2{
+    display: inline-block;
+}
+
+.work_design.move3{
+    display: inline-block;
+}
+.work_design.move4{
+    display: inline-block;
+}
+.work_design.move5{
+    display: inline-block;
+}
+.work_design.move6{
+    display: inline-block;
+}
+.work_design.move7{
+    display: inline-block;
+}
+.try_text.move.inview {
+    width: 500px;
+    margin: 10px auto 100px;
+    color: #5F5F5F;
+    line-height: 2;
+}
+section .header{
+  display: table;
+}
+
+
+section .header_title {
+    display: inline-table;
+    width: 100%;
+    text-align: right;
+    background: #FFF;
+    font-size: 12px;
+}
+section .header_title li{
+    display: inline-table;
+    padding: 20px 20px;
+    font-weight: bold;
+
+}
+
+section .title p{
+    font-size: 0.5em;
+}
+section .design {
+      text-align: center;
+  }
+
+section .header_title li a{
+    text-decoration: none;   
+    color: #5F5F5F;
+}
+
+section .header img{
+    width: 500px;
+    height: 500px;
+}
+text {
+    /* 色はお好みで */
+    stroke: orange;
+    /* 色はお好みで */
+    fill: orange;
+    /* 文字が大きい方がアニメーションが綺麗なので50pxを指定 */
+    font-size: 100px;
+    /* 100%だと最後まで表示されないので多めに設定する */
+    stroke-dasharray: 150% 150%;
+    /* 線が細いほうがアニメーションが綺麗なので0.5pxを指定 */
+    stroke-width: 0.5px;
+    -webkit-animation: stroke-anim 5s linear;
+    animation: stroke-anim 5s linear;
+    /*background-image: url("img/水玉写真.jpg");*/
+}
+@-webkit-keyframes stroke-anim {
+  0% {
+    /* 100%だと最後まで表示されないので多めに設定する */
+    stroke-dashoffset: 150%;
+    fill:transparent;
+  }
+  50% {
+    fill:transparent;
+  }
+  100% {
+    stroke-dashoffset: 0%;
+    fill:black;
+  }
+}
+
+@keyframes stroke-anim {
+  0% {
+    /* 100%だと最後まで表示されないので多めに設定する */
+    stroke-dashoffset: 150%;
+    fill:transparent;
+  }
+  50% {
+    fill:transparent;
+  }
+  100% {
+    stroke-dashoffset: 0%;
+    fill:orange;
+  }
+}
+
+.copy {
+    text-align: center;
+    width: 100vw;
+    height: 200px;
+    transform: all;
+    animation:all;
+
+}
+.animation_text {
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+section.thinking {
+    text-align: center;
+}
+.pan {
+    display: block;
+    margin: 10px 0px;
+    text-align: center;
+}
+.pan_picture {
+    display: inline-block;
+}
+p img {
+    display: inline-block;
+}
+.pan_text {
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+    vertical-align: top;
+    text-align: left;
+    line-height: 2;
+}
+.name_text {
+    margin: 70px auto 10px;
+    /* text-align: center; */
+    font-size: 50px;
+    font-weight: bold;
+}
+.copy_content img{
+    opacity:0.2;
+}
+svg {
+    width: 900px;
+    text-align: center;
+    margin: 0 auto;
+}
+/*.copy_content{
+     opacity: 0.5;
+}*/
+.title_text.move.inview {
+    z-index: 11111111;
+    margin: 270px 100px 0px 100px;
+    text-align: center;
+}
+section.can {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.writing{
+    display: inline-block;
+    margin:0px 40px;
+}
+.irasuto{
+    display: inline-block;
+    margin:0px 40px;
+}
+.charange{
+    display: inline-block;
+    margin:0px 40px;
+}
+.writing_text{
+     width:330px;
+     text-align: left;
+      line-height:2;
+
+}
+.writing_title {
+    font-size: 30px;
+    color: #5E5E5E;
+}
+.irasuto_text{
+     width:330px;
+     text-align: left;
+     line-height:2;
+}
+.charange_text{
+     width:330px;
+     text-align: left;
+      line-height:2;
+}
+/*.copy_content{
+     animation: guruguru 8s linear infinite;
+    -webkit-animation: guruguru 8s linear infinite;
+    -moz-animation: guruguru 8s linear infinite;
+    background-repeat: repeat;
+}
+@-webkit-keyframes guruguru {
+  0% { -webkit-transform: translate(-1000px,0px); }
+  100% { -webkit-transform: translate(1000px,0) ; }
+}*/
+
+section .text {
+    top: 30px;
+    left: 0px;
+    vertical-align: top;
+    position: relative;
+    opacity: 1.4;
+    z-index: 111;
+}
+section .text_profile {
+    width: 530px;
+    text-align: center;
+    margin: 40px auto;
+}
+.riko_picture {
+    position: relative;
+    text-align: center;
+    }
+section#skill {
+    text-align: center;
+    margin: 100px 0px;
+}
+
+section .title {
+    font-size: 20px;
+    /* margin-top: 100px; */
+    color: #5F5F5F;
+    margin:0px 0px 50px;
+    text-align: center;
+  }
+
+section .work_design1{
+    margin: 60px;
+    position: relative;
+}
+
+section .work_design2{
+  margin: 60px;
+}
+
+section .work_design3{
+  margin: 60px;
+}
+section .picture {
+  display: inline-block;
+  position: relative;
+}
+section#making {
+    margin: 70px 0px;
+}
+section .explain_text {
+    width: 800px;
+    margin: 0 auto;
+    line-height: 3;
+}
+
+section footer{
+  width:100%;
+  height :200px;
+  background: #fff;
+}
+
+
+section footer .footer_name{
+  color: #19B6E0;
+  vertical-align: middle;
+  line-height: 10;
+}
+
+section .my_application{
+  display: block;
+  text-align: center;
+  background:#fff;
+}
+.title_eating.run {
+    font-size: 40px;
+    font-weight: bold;
+}
+section .explain_text {
+    width: 800px;
+    margin: 0 auto;
+    line-height: 2;
+    font-weight: lighter;
+    font-size: 0.8em;
+    text-align: left;
+}
+section.text_application {
+    width: 680px;
+    margin: 0px auto;
+    line-height: 2;
+    color: #737373;
+}
+section .application{
+    display: inline-block;
+}
+
+section .application2{
+    display: inline-block;
+}
+
+section .application_top{
+    display: block;
+    width: 100%;
+}
+
+section.explain {
+    margin: 30px 0px 30px;
+}
+
+section.schedule{
+    display: table;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    width: 100%;
+}
+
+section.trouble {
+    margin: 140px 0px;
+}
+/*.plan p {
+    display: inline-block;
+    background: #FFFEAA;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 3;
+    position: relative;
+    left: -20px;
+    font-size: 20px;
+}*/
+
+.plan {
+    margin: 0px auto;
+    text-align: left;
+    display: block;
+    width: 300px;
+    position: relative;
+    height: 600px;
+    font-size: 20px;
+}
+.plan6 {
+    margin: 30px 0px;
+}
+.circle {
+    display: inline-block;
+    /* text-align: right; */
+    background: #FFEB3B;
+    border-radius: 34px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -85px;
+    top: 40px;
+}
+.circle2 {
+    display: inline-block;
+    background: #FFEB3B;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -85px;
+    /* top: 0px; */
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.circle3 {
+    display: inline-block;
+    background: #FFEB3B;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -85px;
+    /* top: 0px; */
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.circle4 {
+    display: inline-block;
+    background: #FFEB3B;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -85px;
+    /* top: 0px; */
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.circle5 {
+    display: inline-block;
+    background: #FFEB3B;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -85px;
+    /* top: 0px; */
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.plan:before {
+    content: "";
+    width: 10px;
+    height: 470px;
+    background: #e2e2d4;
+    position: absolute;
+    z-index: -111;
+    top: 20px;
+    left: -65px;
+}
+.plan.move.inview {
+    line-height: 5;
+}
+.motivation_content {
+    background: #FFFEAA;
+    width: 600px;
+    margin: 0 auto;
+}
+.riko_picture.move.inview {
+    display: inline-block;
+    /* width: 400px; */
+    margin: 50px 0px;
+    
+}
+.picture text move inview{
+    display: inline-block;
+}
+/*section .biography dt{
+    float: left;
+    display: inline;
+    zoom: 1;
+    margin: 7px 10px 3px;
+    padding: 3px 5px;
+    width: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 14px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+section .biography dd{
+    float: left;
+    display: inline;
+    zoom: 1;
+    width: 155px;
+    margin-top: 7px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+section .biography{
+    float:left;
+    display: inline;
+    zoom: 1;
+    width:238px;
+}*/
+.riko_picture move p{
+    width: 20px;
+    height: 20px;
+}
+
+.innner{
+    width: 700px;
+    margin: 0 auto;
+}
+section.target {
+    text-align: center;
+}
+
+section .trouble_text nav {
+    width: 600px;
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+    line-height: 2;
+}
+section .text_application {
+    width: 548px;
+    margin: 10px auto;
+    color: #737373;
+    font-size: 0.9em;
+}
+section.motivation {
+    margin: 140px 0px;
+}
+section .motivation_content {
+    margin: 30px auto;
+    padding: 30px;
+    background: #fff;
+}
+section .motivation_text p {
+    display: inline;
+}
+section .motivation_text {
+    text-align: center;
+    font-size: 1.5em;
+    display: block;
+}
+section .motivation_text2 {
+    background: #FFFEAA;
+    width: 600px;
+    text-align: center;
+    height: 100px;
+    line-height: 5;
+}
+section .motivation_content_picture {
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+section .container{
+    display: block;
+}
+
+section .motivation_pear {
+    display: block;
+    /* padding: 70px; */
+    /* text-align: center; */
+    margin-top: 32px;
+}
+section .motivation_reason {
+    width: 200px;
+    display: inline-block;
+    margin: 0px 30px;
+    /* margin: 50px; */
+    /* text-align: left; */
+}
+section .motivation_reason2 {
+    width: 200px;
+    text-align: left;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 2;
+    margin: 0px 30px;
+}
+section .motivation_text_reason {
+    font-size: 12px;
+    line-height: 2;
+}
+section.motivation_text_reason2 {
+    font-size: 12px;
+    line-height: 2;
+}
+section .motivation_text_reason_picture {
+    display: inline-block;
+}
+section.motivation_text_reason {
+    font-size: 0.8em;
+    line-height: 2;
+    width: 210px;
+}
+section.motivation_reason2 {
+    width: 270px;
+    display: inline-block;
+    /* position: relative; */
+    /* margin-left: 190px; */
+    text-align: left;
+}
+
+section.motivation_text_reason2 {
+    font-size: 0.8em;
+    line-height: 2;
+    width: 200px;
+}
+section .motivation_text2 p{
+    display: inline;
+    font-size: 1.3em;
+    margin: 0px 20px;
+}
+section .motivation_text3 {
+    text-align: center;
+    /* margin: 0 auto; */
+}
+
+.motivation_text_content {
+    color:#5F5F5F;;
+}
+section .point_text {
+width: 600px;
+margin: 0 auto;
+line-height: 2.5;
+}
+
+section .point_text p{
+  font-weight: bold;
+  display: inline;
+}
+
+section .point-text_picture {
+    margin: 0 auto;
+    text-align: center;
+}
+
+section .trouble_text li{
+  list-style-type:disc;
+}
+
+section .target_text {
+    margin: 40px;
+}
+
+section .ec_site_picture {
+    text-align: center;
+    background-image: url(img/ECサイトのやつ.jpg);
+    background: cover;
+    background-size: cover;
+    /* width: 1000px; */
+    height: 1000px;
+}
+.obog_picture.move.inview{
+    text-align: center;
+    background-image: url(img/OBOG.jpg);
+    background: cover;
+    background-size: cover;
+    /* width: 1000px; */
+    height: 1000px;
+}
+section .skill_set {
+    text-align: center;
+}
+section .thinking_ec_site {
+    width: 600px;
+    margin: 0 auto;
+}
+.square_btn {
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #5F5F5F;
+    background:#FFFAAF;
+    border-radius: 4px;
+    width: 300px;
+    display: block;
+    margin: 60px auto;
+    height: 70px;
+    line-height: 4;
+    text-align: center;
+}
+.square_btn:active {/*押したとき*/
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+section .obog_picture {
+    text-align: center;
+}
+section .obog_target_content {
+    width: 500px;
+    margin: 50px auto;
+    line-height: 2;
+}
+
+section .obog_target_content p{
+    margin: 0;
+}
+.obog_target_picture {
+    text-align: center;
+}
+.obog_content {
+    width: 500px;
+    text-align: left;
+    margin: 60px auto;
+    font-size: 17px;
+}
+footer {
+    background: #FEFA93;
+    height: 100px;
+    text-align: center;
+    line-height: 5;
+}
+.loading {
+position: fixed;
+width: 100vw;
+height: 100vh;
+top: 0px;
+left: 0px;
+background:#FEFA93;
+z-index: 9999;
+}
+.loader {
+  color:  #19B6E0;
+  font-size: 20px;
+  margin: 400px auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-animation: load4 1.3s infinite linear;
+  animation: load4 1.3s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+@-webkit-keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+@keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
