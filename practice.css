@@ -1,0 +1,137 @@
+html { box-sizing: border-box; } 
+body{
+  background:#101010;
+}
+.loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  background:#000000;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading_content{
+  width: 45px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+  margin: auto;
+  animation-name: loading;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+
+  &:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  &:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  &:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  &:nth-child(4) {
+    animation-delay: 0.1s;
+  }
+  &:nth-child(5) {
+    animation-delay: 0.2s;
+  }
+  &:nth-child(6) {
+    animation-delay: 0.3s;
+  }
+  &:nth-child(7) {
+    animation-delay: 0s;
+  }
+  &:nth-child(8) {
+    animation-delay: 0.1s;
+  }
+  &:nth-child(9) {
+    animation-delay: 0.2s;
+  }
+}
+
+@keyframes loading {
+  20% {
+    transform: scale(0.1);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+.header {
+  z-index: 100;
+  height: 60px;
+  text-align: right;
+  color: wheat;
+}
+.header_text1 {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.header_text2 {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.dd img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: -20px 0px;
+}
+.dd {
+  /* width: 50%; */
+  flex-wrap:wrap;
+  /* text-align: center; */
+  animation-name: fade-in3;
+  animation-duration: 5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 1s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: normal; 
+  font-size: 100px;
+}
+
+
+@keyframes fade-in3 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 70px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@media screen and (max-width:1279px) {
+body{
+background: blueviolet
+}
+.dd{
+display: block;
+}
+
+}
+@media screen and (max-width:850px) {
+  body{
+  background: burlywood;
+  }
+  }
+  
+  
