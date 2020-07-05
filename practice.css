@@ -202,6 +202,47 @@ display: block;
     box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
 }
 
+.pan {
+  display: block;
+  margin: 10px 0px;
+  text-align: center;
+}
+.pan_picture {
+  display: inline-block;
+}
+p img {
+  display: inline-block;
+}
+.pan_text {
+  display: inline-block;
+  width: 400px;
+  height: 300px;
+  vertical-align: top;
+  text-align: left;
+  line-height: 2;
+}
+.name_text {
+  margin: 70px auto 10px;
+  /* text-align: center; */
+  font-size: 50px;
+  font-weight: bold;
+}
+.copy_content img{
+  opacity:0.2;
+}
+svg {
+  width: 900px;
+  text-align: center;
+  margin: 0 auto;
+}
+/*.copy_content{
+   opacity: 0.5;
+}*/
+.title_text.move.inview {
+  z-index: 11111111;
+  margin: 270px 100px 0px 100px;
+  text-align: center;
+}
 footer{
     width: 100%;
     background-color: #89c7de;
