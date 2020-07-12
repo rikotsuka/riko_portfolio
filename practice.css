@@ -290,7 +290,7 @@ section.skill_content {
 }
 .writing_text {
   width: 400px;
-  /* font-weight: 200; */
+  font-size: 16px;
   text-align: left;
 }
 .writing_text::before {
@@ -323,12 +323,12 @@ section.skill_content {
 }
 .irasuto_text {
   width: 400px;
-  /* font-weight: 200; */
+  font-size: 16px;
   text-align: left;
 }
 .charange_text {
   width: 400px;
-  /* font-weight: 200; */
+  font-size: 16px;
   text-align: left;
 }
 .title {
